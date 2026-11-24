@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctxforge"
+version = "0.1.0"
+description = "Local context compiler and project decision registry for long-term LLM development"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+ctx = "ctxforge.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ctxforge*"]
